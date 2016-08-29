@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>flowerTastic</title>
+  <title>muscianTastic</title>
   <link rel="stylesheet" type="text/css" href="https://bootswatch.com/darkly/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -10,12 +10,12 @@
 
 <div class="container">
 
-  <div id="flowerButton"></div><br>
+  <div id="muscianButton"></div><br>
 
-  <form id="flowerForm">
-    <label for="flowerInput">Add a Flower</label>
-    <input type="text" id="flowerInput"><br>
-    <input id="addFlower" type="submit" name="Submit">
+  <form id="muscianForm">
+    <label for="muscianInput">Add a muscian!<br>Type a name in the box to the right<br>and click the submit button below</label>
+    <input type="text" id="muscianInput"><br>
+    <input id="addmuscian" type="submit" name="Submit">
   </form>
 
   <div>
@@ -23,10 +23,20 @@
      </div>
   </div>
 
+<!-- The Modal  -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modalContent">
+    <span class="close">x</span>
+    <p><br>Error 999:<br><br>Search item cannot be blank.<br><br>Please enter the name of a muscian.</p>
+  </div>
+
+</div>
 
 
   <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="assets/javascript/giphyjavascript.js"></script>
+  <script type="text/javascript" src="assets/javascript/javascript.js"></script>
 
 </div>
 </body>
