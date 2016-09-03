@@ -39,7 +39,7 @@ $(document).ready(function() {
        searchText = searchText + querycategory;
        searchText = searchText.replace(" ", "+");
        var rating = "rating=g";
-       var queryURL = "http://api.giphy.com/v1/gifs/search?q="+searchText+"&limit=10&api_key=dc6zaTOxFJmzC&rating=g";
+       var queryURL = "https://api.giphy.com/v1/gifs/search?q="+searchText+"&limit=10&api_key=dc6zaTOxFJmzC&rating=g";
       //make the ajax call
       $.ajax({url: queryURL, method: 'GET'}).done(function(ajaxResponse)
    {
