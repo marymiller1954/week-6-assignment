@@ -7,26 +7,22 @@ $(document).ready(function() {
 
 
   $('#addmuscian').on('click', function(event){
-    console.log("entering add muscian");
+
     event.preventDefault();
     var newmuscian = $('#muscianInput').val().trim();
     if (newmuscian === "") {
-          console.log("the entry is blank");
-          console.log("going to errormsg");
+
           errormsg();
           
-
             return;
       
         } //end if
   else {
 
      $('#muscianInput').val("")
-     console.log("pushing new muscian");
+
     buttonArray.push(newmuscian);
-    console.log("this is the new muscian");
-    console.log(newmuscian);    console.log("going to addButton");
-    console.log(buttonArray);
+
     addButton();
 
   }  //end else
@@ -35,7 +31,7 @@ $(document).ready(function() {
 
   $('#muscianButton').on('click', '.muscian', function(){
     event.preventDefault();
-    console.log("muscian button clicked");
+
     var theButtonText = this.textContent;
     var querycategory = " music";
       //replace space with +
